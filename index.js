@@ -54,17 +54,21 @@ async function buildNewsFeed() {
     image.src = tweet.imageSource;
     image.classList.add('image');
 
-    const replyCountIcon = document.createElement('div');
-    replyCountIcon.classList.add('reply-count');
-    replyCountIcon.classList.add('icon');
+    const replyIcon = document.createElement('div');
+    replyIcon.classList.add('reply');
+    replyIcon.classList.add('icon');
 
-    const retweetCountIcon = document.createElement('div');
-    retweetCountIcon.classList.add('retweet-count');
-    retweetCountIcon.classList.add('icon');
+    const retweetIcon = document.createElement('div');
+    retweetIcon.classList.add('retweet');
+    retweetIcon.classList.add('icon');
 
-    const likeCountIcon = document.createElement('div');
-    likeCountIcon.classList.add('like-count');
-    likeCountIcon.classList.add('icon');
+    const likeIcon = document.createElement('div');
+    likeIcon.classList.add('like');
+    likeIcon.classList.add('icon');
+
+    const shareIcon = document.createElement('div');
+    shareIcon.classList.add('share');
+    shareIcon.classList.add('icon');
 
     const tweetElement = document.createElement('div');
     tweetElement.classList.add('tweet');
@@ -74,9 +78,10 @@ async function buildNewsFeed() {
     tweetElement.appendChild(postedAt);
     tweetElement.appendChild(textContent);
     tweetElement.appendChild(image);
-    tweetElement.appendChild(replyCountIcon);
-    tweetElement.appendChild(retweetCountIcon);
-    tweetElement.appendChild(likeCountIcon);
+    tweetElement.appendChild(replyIcon);
+    tweetElement.appendChild(retweetIcon);
+    tweetElement.appendChild(likeIcon);
+    tweetElement.appendChild(shareIcon);
 
     newsFeed.appendChild(tweetElement);
   }
