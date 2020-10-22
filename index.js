@@ -62,6 +62,10 @@ async function buildNewsFeed() {
     retweetCountIcon.classList.add('retweet-count');
     retweetCountIcon.classList.add('icon');
 
+    const likeCountIcon = document.createElement('div');
+    likeCountIcon.classList.add('like-count');
+    likeCountIcon.classList.add('icon');
+
     const tweetElement = document.createElement('div');
     tweetElement.classList.add('tweet');
 
@@ -72,6 +76,7 @@ async function buildNewsFeed() {
     tweetElement.appendChild(image);
     tweetElement.appendChild(replyCountIcon);
     tweetElement.appendChild(retweetCountIcon);
+    tweetElement.appendChild(likeCountIcon);
 
     newsFeed.appendChild(tweetElement);
   }

@@ -54,6 +54,11 @@ a {
   -webkit-mask: url(icons/retweet.svg) no-repeat center;
 }
 
+.like-count {
+  mask: url(icons/like.svg) no-repeat center;
+  -webkit-mask: url(icons/like.svg) no-repeat center;
+}
+
 
 .author-name {
   font-weight: bolder;
