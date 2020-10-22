@@ -37,6 +37,24 @@ a {
   border-radius: 1em;
 }
 
+.icon {
+  background-color: var(--color-text-muted);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.reply-count {
+  mask: url(icons/reply.svg) no-repeat center;
+  -webkit-mask: url(icons/reply.svg) no-repeat center;
+}
+
+.retweet-count {
+  mask: url(icons/retweet.svg) no-repeat center;
+  -webkit-mask: url(icons/retweet.svg) no-repeat center;
+}
+
+
 .author-name {
   font-weight: bolder;
   font-size: 1.2em;

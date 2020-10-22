@@ -54,6 +54,14 @@ async function buildNewsFeed() {
     image.src = tweet.imageSource;
     image.classList.add('image');
 
+    const replyCountIcon = document.createElement('div');
+    replyCountIcon.classList.add('reply-count');
+    replyCountIcon.classList.add('icon');
+
+    const retweetCountIcon = document.createElement('div');
+    retweetCountIcon.classList.add('retweet-count');
+    retweetCountIcon.classList.add('icon');
+
     const tweetElement = document.createElement('div');
     tweetElement.classList.add('tweet');
 
@@ -62,6 +70,8 @@ async function buildNewsFeed() {
     tweetElement.appendChild(postedAt);
     tweetElement.appendChild(textContent);
     tweetElement.appendChild(image);
+    tweetElement.appendChild(replyCountIcon);
+    tweetElement.appendChild(retweetCountIcon);
 
     newsFeed.appendChild(tweetElement);
   }
