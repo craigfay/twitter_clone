@@ -54,6 +54,7 @@ async function buildNewsFeed() {
   newsFeed.classList.add('news-feed');
 
   for (let tweet of tweets) {
+
     const authorName = document.createElement('span');
     authorName.innerText = tweet.authorName;
     authorName.classList.add('author-name');
@@ -93,7 +94,11 @@ async function buildNewsFeed() {
       text.innerText = textContent;
 
       action.appendChild(icon);
-      action.appendChild(text);
+
+      if (textContent) {
+        action.appendChild(text);
+      }
+
       return action;
     }
 
@@ -121,6 +126,13 @@ async function buildNewsFeed() {
 
     const tweetElement = document.createElement('div');
     tweetElement.classList.add('tweet');
+
+    if (tweet.retweetedByName) {
+      const retweetedBy = document.createElement('span');
+      retweetedBy.innerText = `Reposted by ${tweet.retweetedByName}`
+      retweetedBy.classList.add('retweeted-by');
+      tweetElement.appendChild(retweetedBy);
+    }
 
     tweetElement.appendChild(authorName);
     tweetElement.appendChild(authorHandle);

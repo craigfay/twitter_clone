@@ -2,14 +2,70 @@
   {
     "authorName": "billie eilish",
     "authorHandle": "billieeilish",
-    "authorProfileImageSource": "https://pbs.twimg.com/profile_images/1288897450313359360/NH44P9Ta_400x400.jpg",
+    "retweetedByName": null,
     "textContent": "BILLIE EILISH – “WHERE DO WE GO?” THE LIVESTREAM\nOctober 24, 2020\nTickets on sale now + exclusive access to merch at a special price for a limited time.\nhttps://livestream.billieeilish.com",
     "imageSource": "https://pbs.twimg.com/media/EjvZ_nqVkAItWnh?format=jpg&name=medium",
     "imageLink": null,
     "postedAt": "2020-10-20T05:00:00.000Z",
     "replyCount": 1600,
     "retweetCount": 7000,
-    "likeCount": 50100,
-    "pinned": true
+    "likeCount": 50100
+  },
+  {
+    "authorName": "billboard",
+    "authorHandle": "billboard",
+    "retweetedByName": "billie eilish",
+    "textContent": "@billieeilish\nreveals brand-new details about her upcoming livestream concert. http://blbrd.cm/Jyxzi2Z",
+    "imageSource": "https://pbs.twimg.com/media/EkyffcQXEAIStsy?format=jpg&name=medium",
+    "imageLink": null,
+    "postedAt": "2020-10-20T05:00:00.000Z",
+    "replyCount": 162,
+    "retweetCount": 1100,
+    "likeCount": 18100
+  },
+  {
+    "authorName": "Global Citizen",
+    "authorHandle": "GlblCtzn",
+    "retweetedByName": "billie eilish",
+    "textContent": "Want to win a ticket to @billieeilish’s virtual concert, “WHERE DO WE GO? THE LIVESTREAM”? Click the link to tell us your voting plan and why voting is important to you, and you could be front row (virtually, of course) with Billie! https://glblctzn.me/2H5ESbf #EveryVoteCounts",
+    "imageSource": "https://pbs.twimg.com/media/EkeV0N4X0AEVLcq?format=jpg&name=medium",
+    "imageLink": null,
+    "postedAt": "2020-10-16T05:00:00.000Z",
+    "replyCount": 105,
+    "retweetCount": 571,
+    "likeCount": 8400 
+  },
+  {
+    "authorName": "billie eilish",
+    "authorHandle": "billieeilish",
+    "textContent": "Shop the Billie Eilish - “No Time To Die” 7” Vinyl, available at @amazonmusic and @urbanoutfitters. https://smarturl.it/NoTimeToDieVinyl",
+    "imageSource": "https://pbs.twimg.com/media/EjmUdXsVoAAsIko?format=jpg&name=medium",
+    "imageLink": null,
+    "postedAt": "2020-10-05T05:00:00.000Z",
+    "replyCount": 342,
+    "retweetCount": 2000,
+    "likeCount": 27700 
+  },
+  {
+    "authorName": "billie eilish",
+    "authorHandle": "billieeilish",
+    "textContent": "Tune in to @FallonTonight at 11:35/10:35c to watch an interview and performance by Billie and @FINNEAS.",
+    "imageSource": "https://pbs.twimg.com/media/EjmLqfeU4AEwboa?format=jpg&name=medium",
+    "imageLink": null,
+    "postedAt": "2020-10-05T05:00:00.000Z",
+    "replyCount": 528,
+    "retweetCount": 2300,
+    "likeCount": 27800 
+  },
+  {
+    "authorName": "ClaireMFoundation",
+    "authorHandle": "clairemcoral",
+    "textContent": "It doesn’t get much bigger than this! Global music sensation @billieeilish has generously signed and donated four incredible items to benefit the Claire Marie Music Foundation. Auction is live NOW! You don’t want to miss this - https://charityauctionstoday.com/auctions/Claire-Marie-Music-Fest-14894/items/billieeilishdontsmileatmeorangelongsleeveshirtdiscontinueddesignsizexlsignedbybillieeilish-255164?category_id=0",
+    "imageSource": "https://pbs.twimg.com/media/EjWBXukU0AAUl6L?format=jpg&name=large",
+    "imageLink": null,
+    "postedAt": "2020-10-02T05:00:00.000Z",
+    "replyCount": 98,
+    "retweetCount": 714,
+    "likeCount": 1200 
   }
 ]
