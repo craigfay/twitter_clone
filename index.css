@@ -10,34 +10,62 @@ html {
   color: var(--color-text);
   background-color: var(--color-background);
 
-  line-height: 1.7em;
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
   color: var(--color-alpha);
   display: block;
   white-space: nowrap;
-  width: 300px; 
+  width: 15em; 
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 2em;
 }
 
 .news-feed {
   display: flex;
   flex-wrap: wrap;
   width: 500px;
+  width: 100%;
   margin:0 auto;
 }
 
 .tweet {
   width: 100%;
-  padding: 1em;
+  padding: 2em;
 }
 
 .retweeted-by {
   display: block;
   color: var(--color-text-muted);
   font-size: .8em;
+}
+
+.author-name {
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+.author-handle {
+  display: none;
+}
+
+.author-handle::before {
+  content: "@";
+}
+
+.author-handle, .posted-at {
+  color: var(--color-text-muted);
+}
+
+.author-name, .author-handle, .posted-at {
+  margin-right: .7em;
 }
 
 .text-content {
@@ -47,7 +75,7 @@ a {
 .image {
   width: 100%;
   border-radius: 1em;
-  max-height: 500px;
+  max-height: 100vw;
   object-fit: cover;
 }
 
@@ -68,7 +96,7 @@ a {
   background-color: var(--color-text-muted);
   display: inline-block;
   flex: 1;
-  width: 25px;
+  width: 2em;
 }
 
 .action .action-text {
@@ -107,21 +135,4 @@ a {
 .share {
   mask: url(icons/share.svg) no-repeat center;
   -webkit-mask: url(icons/share.svg) no-repeat center;
-}
-
-.author-name {
-  font-weight: bolder;
-  font-size: 1.2em;
-}
-
-.author-handle::before {
-  content: "@";
-}
-
-.author-handle, .posted-at {
-  color: var(--color-text-muted);
-}
-
-.author-name, .author-handle, .posted-at {
-  margin-right: .7em;
 }
