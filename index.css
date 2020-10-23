@@ -89,6 +89,8 @@ a {
   padding: .5em 1em;
   display: flex;
   border-radius: 1em;
+  transition-property: background-color;
+  transition-duration: .3s;
 }
 
 
@@ -97,12 +99,17 @@ a {
   display: inline-block;
   flex: 1;
   width: 2em;
+  transition-property: background-color;
+  transition-duration: .3s;
 }
+
 
 .action .action-text {
   font-size: var(--base-font-size);
   margin-left: .7em;
   color: var(--color-text-muted);
+  transition-property: background-color;
+  transition-duration: .3s;
 }
 
 .action:hover {
