@@ -126,7 +126,19 @@ async function buildNewsFeed() {
     tweetElement.appendChild(authorHandle);
     tweetElement.appendChild(postedAt);
     tweetElement.appendChild(textContent);
-    tweetElement.appendChild(image);
+
+    // Wrapping the image with a click-able link, if necesssary
+    if (tweet.imageLink) {
+      const imageLink = document.createElement('a');
+      imageLink.setAttribute('href', tweet.imageLink);
+      imageLink.appendChild(image);
+      tweetElement.appendChild(imageLink);
+    }
+
+    else {
+      tweetElement.appendChild(image);
+    }
+
     tweetElement.appendChild(actionTray);
 
     actionTray.appendChild(reply);
