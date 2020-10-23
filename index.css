@@ -21,12 +21,10 @@ html {
 
 a {
   color: var(--color-alpha);
-  display: block;
   white-space: nowrap;
   width: 15em; 
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 2em;
 }
 
 .news-feed {
@@ -140,24 +138,46 @@ a {
   -webkit-mask: url(icons/share_48px.svg) no-repeat center;
 }
 
-/*
-.reply {
-  mask: url(icons/reply_48px.svg) no-repeat center;
-  -webkit-mask: url(icons/reply_48px.svg) no-repeat center;
-}
+/* styling for desktop sizes */
+@media only screen and (min-width: 1024px) {
+  html {
+    --base-font-size: 1em;
+    line-height: 1.5em;
+  }
 
-.retweet {
-  mask: url(icons/retweet_24px.svg) no-repeat center;
-  -webkit-mask: url(icons/retweet_24px.svg) no-repeat center;
-}
+  .news-feed {
+    max-width: 500px;
+  }
 
-.like {
-  mask: url(icons/like_24px.svg) no-repeat center;
-  -webkit-mask: url(icons/like_24px.svg) no-repeat center;
-}
+  .tweet {
+    padding: 1em;
+  }
 
-.share {
-  mask: url(icons/share_24px.svg) no-repeat center;
-  -webkit-mask: url(icons/share_24px.svg) no-repeat center;
+  .image {
+    max-height: 500px;
+  }
+
+  .action-tray {
+    padding: 1em;
+  }
+
+  .reply {
+    mask: url(icons/reply_24px.svg) no-repeat center;
+    -webkit-mask: url(icons/reply_24px.svg) no-repeat center;
+  }
+  
+  .retweet {
+    mask: url(icons/retweet_24px.svg) no-repeat center;
+    -webkit-mask: url(icons/retweet_24px.svg) no-repeat center;
+  }
+  
+  .like {
+    mask: url(icons/like_24px.svg) no-repeat center;
+    -webkit-mask: url(icons/like_24px.svg) no-repeat center;
+  }
+  
+  .share {
+    mask: url(icons/share_24px.svg) no-repeat center;
+    -webkit-mask: url(icons/share_24px.svg) no-repeat center;
+  }
 }
-*/
