@@ -15,7 +15,6 @@ function humanReadableDate(timestamp) {
   // https://en.wikipedia.org/wiki/ISO_8601
 }
 
-
 function makeLinksClickable(textContent) {
   // Given a chunk of text, return the same chunk of text,
   // but with all the URLs replaced with clickable HTML links.
@@ -36,6 +35,9 @@ function makeLinksClickable(textContent) {
 }
 
 function approximate(quantity) {
+  // Given a potentially large number,
+  // return a more compact abbreviation.
+
   if (quantity > 1000) {
     return `${(quantity / 1000).toFixed(1)}k`
   }
