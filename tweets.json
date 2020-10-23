@@ -38,6 +38,7 @@
   {
     "authorName": "billie eilish",
     "authorHandle": "billieeilish",
+    "retweetedByName": null,
     "textContent": "Shop the Billie Eilish - “No Time To Die” 7” Vinyl, available at @amazonmusic and @urbanoutfitters. https://smarturl.it/NoTimeToDieVinyl",
     "imageSource": "https://pbs.twimg.com/media/EjmUdXsVoAAsIko?format=jpg&name=medium",
     "imageLink": null,
@@ -49,6 +50,7 @@
   {
     "authorName": "billie eilish",
     "authorHandle": "billieeilish",
+    "retweetedByName": null,
     "textContent": "Tune in to @FallonTonight at 11:35/10:35c to watch an interview and performance by Billie and @FINNEAS.",
     "imageSource": "https://pbs.twimg.com/media/EjmLqfeU4AEwboa?format=jpg&name=medium",
     "imageLink": null,
@@ -60,6 +62,7 @@
   {
     "authorName": "ClaireMFoundation",
     "authorHandle": "clairemcoral",
+    "retweetedByName": "billie eilish",
     "textContent": "It doesn’t get much bigger than this! Global music sensation @billieeilish has generously signed and donated four incredible items to benefit the Claire Marie Music Foundation. Auction is live NOW! You don’t want to miss this - https://charityauctionstoday.com/auctions/Claire-Marie-Music-Fest-14894/items/billieeilishdontsmileatmeorangelongsleeveshirtdiscontinueddesignsizexlsignedbybillieeilish-255164?category_id=0",
     "imageSource": "https://pbs.twimg.com/media/EjWBXukU0AAUl6L?format=jpg&name=large",
     "imageLink": null,
@@ -67,5 +70,53 @@
     "replyCount": 98,
     "retweetCount": 714,
     "likeCount": 1200 
+  },
+  {
+    "authorName": "Vote Save America",
+    "authorHandle": "votesaveamerica",
+    "retweetedByName": "billie eilish",
+    "textContent": "Each state has different voting options and deadlines ahead of Election Day. Learn about your voting options based on where you live, so you can vote early and responsibly: http://votesaveamerica.com/states",
+    "imageSource": "https://pbs.twimg.com/media/EhZ5btLXYAEFRRf?format=jpg&name=medium",
+    "imageLink": null,
+    "postedAt": "2020-09-08T05:00:00.000Z",
+    "replyCount": 78,
+    "retweetCount": 629,
+    "likeCount": 7300 
+  },
+  {
+    "authorName": "billie eilish",
+    "authorHandle": "billieeilish",
+    "retweetedByName": null,
+    "textContent": "Billie Eilish - me & dad radio - “last one”\nThe final episode is available on demand now on Apple Music 1.\n@applemusic http://apple.co/me-n-dad",
+    "imageSource": "https://pbs.twimg.com/media/Ef-RDanUcAAA7LD?format=jpg&name=medium",
+    "imageLink": null,
+    "postedAt": "2020-08-21T05:00:00.000Z",
+    "replyCount": 273,
+    "retweetCount": 979,
+    "likeCount": 19100 
+  },
+  {
+    "authorName": "billie eilish",
+    "authorHandle": "billieeilish",
+    "retweetedByName": null,
+    "textContent": "Billie Eilish - me & dad radio.\nThe final episode airs today at 3pm PT on Apple Music 1. @applemusic\nhttp://apple.co/me-n-dad",
+    "imageSource": "https://pbs.twimg.com/media/Efu4dJQU4AEKU4G?format=jpg&name=medium",
+    "imageLink": null,
+    "postedAt": "2020-08-18T05:00:00.000Z",
+    "replyCount": 495,
+    "retweetCount": 1500,
+    "likeCount": 24600
+  },
+  {
+    "authorName": "billie eilish",
+    "authorHandle": "billieeilish",
+    "retweetedByName": null,
+    "textContent": "Billie is performing at the Democratic National Convention on Wednesday, August 19. Tune in, and for more information on registering to vote, visit https://billieeilish.com/vote",
+    "imageSource": "https://pbs.twimg.com/media/EfZhj4QVAAAAJQT?format=jpg&name=medium",
+    "imageLink": null,
+    "postedAt": "2020-08-14T05:00:00.000Z",
+    "replyCount": 2600,
+    "retweetCount": 5500,
+    "likeCount": 48500 
   }
 ]
