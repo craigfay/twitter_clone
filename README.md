@@ -25,3 +25,6 @@ If you're interested in going deeper into software engineering for the web, I'd 
 
 ## Please Reach Out!
 If anyone looking at this has questions, or thinks that the project can be improved, I'd love to talk about it. I'm reachable by email at craigfay@magnolia.com!
+
+## Icons
+All of the icons used in this project were downloaded from [Feather Icons](https://feathericons.com/) for free!
