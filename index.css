@@ -5,12 +5,13 @@ html {
   --color-alpha: rgb(224, 36, 94);
   --color-alpha-muted: rgba(224, 36, 94, .2);
   --color-background: rgb(0, 0, 0);
+  --base-font-size: 1.5em;
 
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   color: var(--color-text);
   background-color: var(--color-background);
 
-  font-size: 1.5em;
+  font-size: var(--base-font-size);
   line-height: 2.5em;
 }
 
@@ -49,7 +50,7 @@ a {
 
 .author-name {
   font-weight: bolder;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .author-handle {
@@ -80,7 +81,8 @@ a {
 }
 
 .action-tray {
-  padding: 1em;
+  /* padding: 1em; */
+  padding: 1em 0;
   display: flex;
   justify-content: space-between;
 }
@@ -100,6 +102,7 @@ a {
 }
 
 .action .action-text {
+  font-size: var(--base-font-size);
   margin-left: .7em;
   color: var(--color-text-muted);
 }
@@ -118,21 +121,43 @@ a {
 }
 
 .reply {
-  mask: url(icons/reply.svg) no-repeat center;
-  -webkit-mask: url(icons/reply.svg) no-repeat center;
+  mask: url(icons/reply_48px.svg) no-repeat center;
+  -webkit-mask: url(icons/reply_48px.svg) no-repeat center;
 }
 
 .retweet {
-  mask: url(icons/retweet.svg) no-repeat center;
-  -webkit-mask: url(icons/retweet.svg) no-repeat center;
+  mask: url(icons/retweet_48px.svg) no-repeat center;
+  -webkit-mask: url(icons/retweet_48px.svg) no-repeat center;
 }
 
 .like {
-  mask: url(icons/like.svg) no-repeat center;
-  -webkit-mask: url(icons/like.svg) no-repeat center;
+  mask: url(icons/like_48px.svg) no-repeat center;
+  -webkit-mask: url(icons/like_48px.svg) no-repeat center;
 }
 
 .share {
-  mask: url(icons/share.svg) no-repeat center;
-  -webkit-mask: url(icons/share.svg) no-repeat center;
+  mask: url(icons/share_48px.svg) no-repeat center;
+  -webkit-mask: url(icons/share_48px.svg) no-repeat center;
 }
+
+/*
+.reply {
+  mask: url(icons/reply_48px.svg) no-repeat center;
+  -webkit-mask: url(icons/reply_48px.svg) no-repeat center;
+}
+
+.retweet {
+  mask: url(icons/retweet_24px.svg) no-repeat center;
+  -webkit-mask: url(icons/retweet_24px.svg) no-repeat center;
+}
+
+.like {
+  mask: url(icons/like_24px.svg) no-repeat center;
+  -webkit-mask: url(icons/like_24px.svg) no-repeat center;
+}
+
+.share {
+  mask: url(icons/share_24px.svg) no-repeat center;
+  -webkit-mask: url(icons/share_24px.svg) no-repeat center;
+}
+*/
