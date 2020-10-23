@@ -47,49 +47,49 @@ async function buildNewsFeed() {
   // data inside to create HTML elements, then attaching
   // the tweet elements to the page.
 
-  const tweets = await fetch('tweets.json')
+  let tweets = await fetch('tweets.json')
     .then(r => r.json())
 
-  const newsFeed = document.createElement('div');
+  let newsFeed = document.createElement('div');
   newsFeed.classList.add('news-feed');
 
   for (let tweet of tweets) {
 
-    const authorName = document.createElement('span');
+    let authorName = document.createElement('span');
     authorName.innerText = tweet.authorName;
     authorName.classList.add('author-name');
 
-    const authorHandle = document.createElement('span');
+    let authorHandle = document.createElement('span');
     authorHandle.innerText = tweet.authorHandle;
     authorHandle.classList.add('author-handle');
 
-    const postedAt = document.createElement('span');
+    let postedAt = document.createElement('span');
     postedAt.innerText = humanReadableDate(tweet.postedAt);
     postedAt.classList.add('posted-at');
 
-    const textContent = document.createElement('p');
+    let textContent = document.createElement('p');
     textContent.innerHTML = makeLinksClickable(tweet.textContent);
     textContent.classList.add('text-content');
 
-    const image = document.createElement('img');
+    let image = document.createElement('img');
     image.src = tweet.imageSource;
     image.classList.add('image');
 
-    const actionTray = document.createElement('div');
+    let actionTray = document.createElement('div');
     actionTray.classList.add('action-tray');
 
 
     function createAction (className, textContent = '') {
       // Given an icon class name, and some text, return
-      // an HTML element that creates a click-able action.
-      const action = document.createElement('div');
+      // an HTML element that creates a click-able icon.
+      let action = document.createElement('div');
       action.classList.add('action');
 
-      const icon = document.createElement('div');
+      let icon = document.createElement('div');
       icon.classList.add(className);
       icon.classList.add('icon');
 
-      const text = document.createElement('span');
+      let text = document.createElement('span');
       text.classList.add('action-text');
       text.innerText = textContent;
 
@@ -103,32 +103,19 @@ async function buildNewsFeed() {
     }
 
 
-    const reply = createAction('reply', approximate(tweet.replyCount));
-    const retweet = createAction('retweet', approximate(tweet.retweetCount));
-    const like = createAction('like', approximate(tweet.likeCount));
-    const share = createAction('share');
+    // Creating "action icons" that allow viewers to interact
+    // with the tweet being displayed.
+    let reply = createAction('reply', approximate(tweet.replyCount));
+    let retweet = createAction('retweet', approximate(tweet.retweetCount));
+    let like = createAction('like', approximate(tweet.likeCount));
+    let share = createAction('share');
 
-    const replyIcon = document.createElement('div');
-    replyIcon.classList.add('reply');
-    replyIcon.classList.add('icon');
 
-    const retweetIcon = document.createElement('div');
-    retweetIcon.classList.add('retweet');
-    retweetIcon.classList.add('icon');
-
-    const likeIcon = document.createElement('div');
-    likeIcon.classList.add('like');
-    likeIcon.classList.add('icon');
-
-    const shareIcon = document.createElement('div');
-    shareIcon.classList.add('share');
-    shareIcon.classList.add('icon');
-
-    const tweetElement = document.createElement('div');
+    let tweetElement = document.createElement('div');
     tweetElement.classList.add('tweet');
 
     if (tweet.retweetedByName) {
-      const retweetedBy = document.createElement('span');
+      let retweetedBy = document.createElement('span');
       retweetedBy.innerText = `Reposted by ${tweet.retweetedByName}`
       retweetedBy.classList.add('retweeted-by');
       tweetElement.appendChild(retweetedBy);
@@ -138,19 +125,7 @@ async function buildNewsFeed() {
     tweetElement.appendChild(authorHandle);
     tweetElement.appendChild(postedAt);
     tweetElement.appendChild(textContent);
-
-    // Wrapping the image with a click-able link, if necesssary
-    if (tweet.imageLink) {
-      const imageLink = document.createElement('a');
-      imageLink.setAttribute('href', tweet.imageLink);
-      imageLink.appendChild(image);
-      tweetElement.appendChild(imageLink);
-    }
-
-    else {
-      tweetElement.appendChild(image);
-    }
-
+    tweetElement.appendChild(image);
     tweetElement.appendChild(actionTray);
 
     actionTray.appendChild(reply);

@@ -79,7 +79,6 @@ a {
 }
 
 .action-tray {
-  /* padding: 1em; */
   padding: 1em 0;
   display: flex;
   justify-content: space-between;
